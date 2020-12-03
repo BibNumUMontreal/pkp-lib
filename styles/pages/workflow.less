@@ -97,7 +97,9 @@
 		}
 
 		.initiated:not(.ui-state-active) a:before {
-			top: @double + @base - 2;
+/*			top: @double + @base - 2;  */
+/* MHV avril 2020 : je change pour mettre en évidence avec une barre plus marquée l'étape en cours ; résultante : top:44px (au lieu de 42px)*/
+				top: @double + @base - 4;
 		}
 	}
 }
@@ -107,6 +109,15 @@
 	a {
 		&:extend(.pkp_button all);
 		width: 100%;
+
+
+		&.pkp_linkaction_requestRevisions {
+					&:extend(.pkp_button_feujaune all);
+		}
+
+
+
+
 
 		&.pkp_linkaction_decline {
 			&:extend(.pkp_button_offset all);
