@@ -234,7 +234,7 @@ class UserXmlPKPUserFilter extends NativeImportFilter {
 				$mail->setReplyTo($context->getSetting('contactEmail'), $context->getSetting('contactName'));
 				$mail->assignParams(array('username' => $user->getUsername(), 'password' => $password, 'userFullName' => $user->getFullName()));
 				$mail->addRecipient($user->getEmail(), $user->getFullName());
-				$mail->send();
+				// $mail->send();
 			}
 		} else {
 			// the username and the email do not match to the one and the same existing user
