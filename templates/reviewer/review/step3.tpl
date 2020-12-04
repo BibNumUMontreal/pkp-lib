@@ -33,6 +33,14 @@
 		{/fbvFormSection}
 	{/if}
 
+
+	{fbvFormSection label="common.upload" description="reviewer.submission.uploadDescription"}
+		{capture assign="reviewAttachmentsGridUrl"}{url router=$smarty.const.ROUTE_COMPONENT component="grid.files.attachment.ReviewerReviewAttachmentsGridHandler" op="fetchGrid" assocType=$smarty.const.ASSOC_TYPE_REVIEW_ASSIGNMENT assocId=$submission->getReviewId() submissionId=$submission->getId() stageId=$submission->getStageId() reviewIsComplete=$reviewIsComplete escape=false}{/capture}
+		{load_url_in_div id="reviewAttachmentsGridContainer" url=$reviewAttachmentsGridUrl}
+	{/fbvFormSection}
+
+
+
 	{fbvFormSection label="submission.review" description="reviewer.submission.reviewDescription"}
 		{if $reviewForm}
 			{include file="reviewer/review/reviewFormResponse.tpl"}
@@ -46,10 +54,7 @@
 		{/if}
 	{/fbvFormSection}
 
-	{fbvFormSection label="common.upload" description="reviewer.submission.uploadDescription"}
-		{capture assign="reviewAttachmentsGridUrl"}{url router=$smarty.const.ROUTE_COMPONENT component="grid.files.attachment.ReviewerReviewAttachmentsGridHandler" op="fetchGrid" assocType=$smarty.const.ASSOC_TYPE_REVIEW_ASSIGNMENT assocId=$submission->getReviewId() submissionId=$submission->getId() stageId=$submission->getStageId() reviewIsComplete=$reviewIsComplete escape=false}{/capture}
-		{load_url_in_div id="reviewAttachmentsGridContainer" url=$reviewAttachmentsGridUrl}
-	{/fbvFormSection}
+
 
 	<!-- Display queries grid -->
 	{capture assign="queriesGridUrl"}{url router=$smarty.const.ROUTE_COMPONENT component="grid.queries.QueriesGridHandler" op="fetchGrid" submissionId=$submission->getId() stageId=$smarty.const.WORKFLOW_STAGE_ID_EXTERNAL_REVIEW escape=false}{/capture}
