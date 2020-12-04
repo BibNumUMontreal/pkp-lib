@@ -26,7 +26,7 @@
 	<message key="admin.confirmClearTemplateCache">Êtes-vous certain-e de vouloir effacer le cache des modèles compilés ?</message>
 	<message key="admin.confirmExpireSessions">Êtes-vous certain-e de vouloir fermer toutes les sessions utilisateur ? Tous les utilisateurs-trices actuellement connectés-es devront se reconnecter (vous y compris).</message>
 	<message key="admin.contentsOfConfigFile">Contenu du fichier de configuration</message>
-	<message key="admin.contexts.confirmDelete">Êtes-vous certain-e de vouloir supprimer définitivement {$contextName} ainsi que tous ses contenus ?</message>
+	<message key="admin.contexts.confirmDelete">Êtes-vous certain-e de vouloir supprimer définitivement la revue {$contextName} ainsi que tous ses contenus ?</message>
 	<message key="admin.currentVersion">Version actuelle</message>
 	<message key="admin.dateInstalled">Date d'installation</message>
 	<message key="admin.displayConfigFileInstructions"><![CDATA[Le contenu de votre configuration mise à jour est affiché ci-dessous. Pour appliquer les modifications affectées à cette configuration, vous devez ouvrir le fichier <tt>config.inc.php</tt> dans un éditeur de texte adéquat et remplacer son contenu par le contenu de la zone de texte ci-dessous.]]></message>

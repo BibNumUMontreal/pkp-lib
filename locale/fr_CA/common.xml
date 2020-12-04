@@ -9,7 +9,6 @@
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the fr_CA (Français (Canada)) locale.
-  *
   -->
 
 <locale name="fr_CA" full_name="Français (Canada)">
@@ -48,7 +47,7 @@
 	<message key="common.acknowledged">Reçu-e</message>
 	<message key="common.action">Action</message>
 	<message key="common.activate">Activer</message>
-	<message key="common.active">Actif</message>
+	<message key="common.active">Actif-ve</message>
 	<message key="common.add">Ajouter</message>
 	<message key="common.addSelf">S'ajouter</message>
 	<message key="common.name">Nom</message>
@@ -64,6 +63,7 @@
 	<message key="common.assigned">Assigné-e</message>
 	<message key="common.assigned.date">Assigné-e : {$dateAssigned}</message>
 	<message key="common.available">Disponible</message>
+	<message key="common.average">En moyenne</message>
 	<message key="common.back">Précédent-e</message>
 	<message key="common.between">entre</message>
 	<message key="common.cancel">Annuler</message>
@@ -169,6 +169,7 @@
 	<message key="common.keywords">Mots-clés</message>
 	<message key="common.language">Langue</message>
 	<message key="common.languages">Langues</message>
+	<message key="common.lastActivity">Dernière activité enregistrée le {$date}</message>
 	<message key="common.less">Réduire</message>
 	<message key="common.lessThan">{$value} ou moins</message>
 	<message key="common.commaListSeparator">, </message>
@@ -495,22 +496,37 @@
 	<!-- Common -->
 	<message key="grid.action.downloadFile">Télécharger ce fichier</message>
 	<message key="context.path">Chemin d'accès</message>
-	<message key="review.ensuringBlindReview">Assurer une évaluation anonyme</message>
+	<message key="review.ensuringBlindReview">Comment assurer une évaluation anonyme ?</message>
 	<message key="grid.action.showReviewPolicy">Lire la politique actuelle concernant l'évaluation</message>
 	<message key="grid.action.deleteNotification">Supprimer la tâche</message>
 	<message key="grid.action.markNew">Marquer comme non lue(s)</message>
 	<message key="grid.action.markRead">Marquer comme lue(s)</message>
 	<message key="dashboard.tasks">Tâches</message>
 	<message key="dashboard.myQueue">Mes soumissions</message>
-	<message key="review.blindPeerReview"><![CDATA[<p>Afin d'assurer l'intégrité de l'évaluation par les pairs en double-aveugle des soumissions envoyées à cette revue, tous les efforts possibles devraient être faits pour éviter de révéler l'identité des auteurs-es et des évaluateurs-trices. Pour ce faire, les auteurs-es, les rédacteurs-trices et les évaluateurs-trices (qui téléversent les documents dans le cadre de l'évaluation) doivent s'assurer de suivre les étapes suivantes en ce qui concerne les propriétés du texte et du fichier:</p>
-
+	<message key="review.blindPeerReview"><![CDATA[<p>Afin d'assurer l'intégrité de l'évaluation par les pairs en double-aveugle des soumissions envoyées à cette revue, tous les efforts possibles devraient être faits pour éviter de révéler l'identité des auteurs-es et des évaluateurs-trices. Cela implique que les auteurs-es, éditeurs-trices et évaluateurs-trices (qui téléversent des documents dans le cadre de leur évaluation) vérifient si les étapes suivantes ont été prises en ce qui concerne le texte et les propriétés du fichier :</p>
 <ul><li>Supprimer le nom de l'auteur-e du texte. Dans la bibliographie et dans les notes en bas de page, on utilise le mot  « Auteur-e » et l'année au lieu du nom de l'auteur-e, du titre de l'article, etc.</li>
 
-<li>En ce qui concerne les documents de type Microsoft Office, l'identification de l'auteur-e ne doit plus apparaître dans les propriétés du fichier (voir le menu principal Fichier dans Word). Vous devez cliquer: Fichier &gt; Enregistrer sous &gt; Outils (ou Options sur le Mac) &gt; Sécurité &gt; Éliminer les renseignements personnels des propriétés du fichier au moment de la sauvegarde &gt; Sauvegarder.</li>
-
-<li>Pour les fichiers PDF, le nom de l'auteur-e doit être enlevé des propriétés du document dans le menu Fichier, du menu principal d'Adobe Acrobat.</li>
-
-		</ul>]]></message>
+<li>L'identification de l'auteur-e ne doit plus apparaître dans les propriétés du fichier. Pour se faire vous devez suivre les étapes suivantes :
+<ul><li>Microsoft Word pour Windows :
+<ul><li>Aller à « Fichier »</li>
+<li>Sélectionner  « Inspecter le document »</li>
+<li>Cliquer sur « Vérifier l'absence de problèmes »</li>
+<li>Cliquer sur « Inspecter le document »</li>
+<li>Dans la boîte de dialogue de l'inspecteur de document, cocher les cases relatives au type de contenu masqué à inspecter.</li>
+<li>Cliquer « Tout supprimer »</li>
+<li>Cliquer sur « Fermer »</li>
+<li>Sauvegarder le document</li></ul>
+<li>Microsoft Word pour MacOS :
+<ul><li>Aller à « Outils »</li>
+<li>Cliquer sur « Protéger le document »</li>
+<li>Sélectionner « Retirer les renseignements personnels des propriétés du fichier au moment de la sauvegarde »</li>
+<li>Cliquer sur « OK » et sauvegarder le document</li></ul></li>
+<li>PDF :
+<ul><li>Aller à « Fichier »</li>
+<li>Sélectionner « Propriétés »</li>
+<li>Supprimer tout nom du champ auteur</li>
+<li>Cliquer sur « OK » </li>
+<li>Sauvegarder le document</li></ul></li></ul>]]></message>
 	<message key="reviewer.submission.reviewSchedule">Examiner le calendrier</message>
 	<message key="reviewer.submission.reviewRequestDate">Requête du,de la rédacteur-trice</message>
 	<message key="reviewer.submission.responseDueDate">Date d'échéance de la réponse</message>
@@ -531,6 +547,7 @@
 	<message key="notification.type.pendingRevisions.title">Révisions soumises à l'étape {$stage}.</message>
 	<message key="notification.type.metadataModified">Les métadonnées de « {$title} » ont été modifiées.</message>
 	<message key="notification.type.reviewerComment">Un-e réviseur-e a inscrit un commentaire au sujet de « {$title} ».</message>
+	<message key="notification.type.editorialReport">Résumé du rapport de statistiques.</message>
 	<message key="notification.signedFile">Fichier pris en considération.</message>
 	<message key="user.authorization.submissionFile">L'utilisateur-trice actuel-elle n'a pas accès au fichier de soumission spécifié.</message>
 	<message key="user.authorization.invalidSubmission">Soumission invalide</message>

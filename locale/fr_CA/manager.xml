@@ -79,7 +79,7 @@
 	<message key="manager.emails.emailTemplates">Modèles de courriel</message>
 	<message key="manager.emails.enabled">Activer ce modèle de courriel</message>
 	<message key="manager.emails.enable">Activer</message>
-	<message key="manager.emails.enable.message">Vous êtes sur le point de désactiver ce courriel. Vous souhaitez confirmer cette opération ?</message>
+	<message key="manager.emails.enable.message">Vous êtes sur le point d'activer ce courriel. Vous souhaitez confirmer cette opération ?</message>
 	<message key="manager.emails.form.emailKeyRequired">Une clé de courriel unique est obligatoire pour le courriel.</message>
 	<message key="manager.emails.form.bodyRequired">Le corps du courriel est obligatoire.</message>
 	<message key="manager.emails.form.subjectRequired">L'objet du courriel est obligatoire.</message>
@@ -169,6 +169,31 @@
 	<message key="manager.reviewerSearch.interests">Champs d'intérêts pour les évaluation</message>
 	<message key="manager.reviewerSearch.form.instructions">Utilisez le formulaire ci-dessous pour indiquer les valeurs maximales des termes de votre recherche. Le formulaire contient les moyennes calculées pour ces champs.</message>
 	<message key="manager.roles">Rôles</message>
+
+	<message key="manager.statistics.editorial">Activité éditoriale</message>
+	<message key="manager.statistics.totalWithinDateRange">Total pour la période</message>
+	<message key="manager.statistics.editorial.editorialActivity">Activité éditoriale</message>
+	<message key="manager.statistics.editorial.trends">Tendances</message>
+	<message key="manager.statistics.editorial.externalReview">En évaluation externe</message>
+	<message key="manager.statistics.editorial.submissionsActive">Soumissions actives</message>
+	<message key="manager.statistics.editorial.submissionsReceived">Soumissions reçues</message>
+	<message key="manager.statistics.editorial.submissionsAccepted">Soumissions acceptées</message>
+	<message key="manager.statistics.editorial.submissionsDeclined">Soumissions refusées</message>
+	<message key="manager.statistics.editorial.submissionsDeclined.deskReject">Soumissions refusées (dès la préévaluation)</message>
+	<message key="manager.statistics.editorial.submissionsDeclined.postReview">Soumissions refusées (suite à l'évaluation)</message>
+	<message key="manager.statistics.editorial.submissionsDeclined.other">Soumissions refusées (raisons autres)</message>
+	<message key="manager.statistics.editorial.submissionsPublished">Soumissions publiées</message>
+	<message key="manager.statistics.editorial.averageDaysToDecide">Nb moyen de jour(s) pour prendre une 1ère décision éditoriale</message>
+	<message key="manager.statistics.editorial.averageDaysToAccept">Nb moyen de jour(s) pour accepter</message>
+	<message key="manager.statistics.editorial.averageDaysToReject">Nb moyen de jour(s) pour refuser</message>
+	<message key="manager.statistics.editorial.acceptanceRate">Taux d'acceptation</message>
+	<message key="manager.statistics.editorial.rejectionRate">Taux de refus</message>
+	<message key="manager.statistics.editorial.deskRejectRejectionRate">Taux de refus en préévaluation</message>
+	<message key="manager.statistics.editorial.postReviewRejectionRate">Taux de refus suite à l'évaluation</message>
+	<message key="manager.statistics.editorial.otherRejectionRate">Taux de refus pour raisons autres</message>
+	<message key="manager.statistics.editorial.registeredUsers">Utilisateurs-trices enregistrés-es</message>
+	<message key="manager.statistics.users.newUserSignups">Adhésion de nouveaux-elles utilisateurs-trices</message>
+	<message key="manager.statistics.users.allRoles">Tous les rôles</message>
 	<message key="manager.statistics">Statistiques et rapports</message>
 	<message key="manager.statistics.defaultMetricDescription">Votre {$contextObjectName} a été configuré-e pour enregistrer plus d'une mesure d'utilisation. Les statistiques d'utilisation seront affichées dans plusieurs contextes.
 Il y a des cas où seule une statistique d'utilisation doit être utilisée, par exemple pour afficher une liste ordonnée des articles les plus consultés ou pour classer les résultats de recherche. Veuillez sélectionner l'une des mesures configurées par défaut.</message>
@@ -253,7 +278,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="manager.setup.reviewOptions.remindForInvite">Envoyer un rappel si l'évaluateur-trice n'a pas répondu à la demande d'évaluation dans le délai suivant (jours) :</message>
 	<message key="manager.setup.reviewOptions.remindForSubmit">Envoyer un rappel si l'évaluateur-trice n'a pas fait sa recommandation dans le délai suivant (jours) :</message>
 	<message key="manager.setup.reviewOptions.reviewTime">Date limite par défaut de remise des évaluations</message>
-<message key="manager.setup.reviewOptions.showBlindReviewLink">Afficher un lien « Assurer une évaluation à l'aveugle » lors du téléversement</message>
+<message key="manager.setup.reviewOptions.showBlindReviewLink">Afficher un lien « Comment assurer une évaluation à l'aveugle ? » lors du téléversement</message>
 	<message key="manager.setup.searchEngineIndexing.sitemap">Plan de site</message>
 	<message key="manager.setup.searchEngineIndexing.sitemapDescription"><![CDATA[Un plan de site (sitemap) XML est disponible pour la soumission aux engins de recherche à <a href="{$path}" target="_blank">{$path}</a>]]></message>
 	<message key="manager.setup.sponsors.note">Politique en matière de commandites</message>
@@ -335,7 +360,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="manager.plugins.pleaseInstall">Le plugiciel n'existe pas. Veuillez plutôt l'installer.</message>
 	<message key="manager.plugins.pleaseUpgrade">Le plugiciel existe déjà mais il est plus récent que la version installée. Veuillez plutôt le mettre à jour.</message>
 	<message key="manager.plugins.settings">Paramètres</message>
-<message key="manager.plugins.tarCommandNotFound">La commande tar n'est pas disponible. Veuillez la configurer correctement dans votre fichier « config.inc.php ».</message>
+	<message key="manager.plugins.tarCommandNotFound">La commande tar n'est pas disponible. Veuillez la configurer correctement dans votre fichier « config.inc.php ».</message>
 	<message key="manager.plugins.upgrade">Mettre le plugiciel à jour</message>
 	<message key="manager.plugins.upgradeDescription">Ce formulaire vous permet de mettre le plugiciel à jour. Assurez-vous que le plugiciel est compressé en un fichier .tar.gz.</message>
 	<message key="manager.plugins.upgradeFailed">La mise à jour a échoué. {$errorString}</message>
@@ -466,7 +491,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="plugins.importexport.common.error.unknownEncoding">Encodage inconnu {$param}</message>
 	<message key="plugins.importexport.common.error.encodingError">Le contenu n'est pas codé comme {$param}</message>
 	<message key="plugins.importexport.common.error.unknownUserGroup">Groupe d'utilisateurs-trices inconnu {$param}</message>
-<message key="plugins.importexport.common.error.missingGivenName">L'auteur-e « {$authorName} » n'a pas de prénom inscrit pour la langue de la soumission, soit « {$localeName} ». La soumission ne peut être importée sans cette information.</message>
+	<message key="plugins.importexport.common.error.missingGivenName">L'auteur-e « {$authorName} » n'a pas de prénom inscrit pour la langue de la soumission, soit « {$localeName} ». La soumission ne peut être importée sans cette information.</message>
 	<message key="plugins.importexport.common.error.unknownUploader">Téléverseur inconnu {$param}</message>
 	<message key="plugins.importexport.common.error.temporaryFileFailed">Le fichier temporaire {$dest} n'a pu être créé à partir de {$source}</message>
 	<message key="plugins.importexport.common.error.filesizeMismatch">La taille de fichier fournie « {$expected} » et la taille de fichier réelle « {$actual} » ne correspondent pas</message>
@@ -486,7 +511,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="manager.navigationMenus">Menus de navigation</message>
 	<message key="manager.navigationMenus.form.viewInstructions"><![CDATA[<p>Cette page sera accessible à l'adresse suivante : <blockquote>{$pagesPath}</blockquote>...où %PATH% est le chemin d'accès inscrit plus haut. <strong>Note :</strong> Deux pages ne peuvent avoir le même chemin d'accès. Utiliser des chemins d'accès qui sont construits dans le système peut conduire à la perte de fonctionnalités importantes.</p>]]></message>
 	<message key="manager.navigationMenus.form.content">Contenu</message>
-<message key="manager.navigationMenus.form.pathRegEx">Le champ  « Chemin d'accès » ne peut contenir que des caractères alphanumériques, plus « . », « / », « - », et  « _ ».</message>
+	<message key="manager.navigationMenus.form.pathRegEx">Le champ  « Chemin d'accès » ne peut contenir que des caractères alphanumériques, plus « . », « / », « - », et  « _ ».</message>
 	<message key="manager.navigationMenus.form.duplicatePath">Ce chemin d'accès existe déjà pour un autre élément du menu de navigation.</message>
 	<message key="manager.navigationMenus.form.duplicateTitles">Ce titre existe déjà pour un autre menu de navigation.</message>
 	<message key="manager.navigationMenus.form.titleRequired">Le titre est requis</message>
@@ -507,7 +532,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="manager.navigationMenus.remoteUrl">URL distant</message>
 	<message key="manager.navigationMenus.remoteUrl.description">Lien vers n'importe quel URL d'un autre site, par exemple « https://pkp.sfu.ca ».</message>
 	<message key="manager.navigationMenus.about.description"><![CDATA[Lien vers une page affichant le contenu « À propos de cette revue » dans Paramètres > Revue]]></message>
-<message key="manager.navigationMenus.about.conditionalWarning"><![CDATA[Ce lien ne sera affiché que si vous avez rempli la section « À propos », située sous Paramètres > Revue.]]></message>
+	<message key="manager.navigationMenus.about.conditionalWarning"><![CDATA[Ce lien ne sera affiché que si vous avez rempli la section « À propos », située sous Paramètres > Revue.]]></message>
 	<message key="manager.navigationMenus.editorialTeam.description"><![CDATA[Lien vers une page affichant le contenu du « Bloc-générique » dans Paramètres > Revue.]]></message>
 	<message key="manager.navigationMenus.editorialTeam.conditionalWarning"><![CDATA[Ce lien sera seulement affiché si vous avez rempli la section « Bloc-générique » dans Paramètres > Revue.]]></message>
 	<message key="manager.navigationMenus.submissions.description">Lien vers la page affichant les instructions de soumission.</message>
@@ -524,7 +549,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="manager.navigationMenus.logOut.description">Un lien qui fermera la session d'un-e utilisateur-trice.</message>
 	<message key="manager.navigationMenus.loggedOut.conditionalWarning">Ce lien ne sera affiché que si le visiteur ou la visiteuse s'est connecté-e.</message>
 	<message key="manager.navigationMenus.loggedIn.conditionalWarning">Ce lien ne sera affiché que si le visiteur ou la visiteuse ne s'est pas connecté-e.</message>
-<message key="manager.navigationMenus.contact.description">Lien vers une page affichant les renseignements relatifs à votre ou vos personne(s)-ressources.</message>
+	<message key="manager.navigationMenus.contact.description">Lien vers une page affichant les renseignements relatifs à votre ou vos personne(s)-ressources.</message>
 	<message key="manager.navigationMenus.contact.conditionalWarning"><![CDATA[Ce lien ne sera affiché que si vous avez rempli les renseignements relatifs à votre ou vos personne(s)-ressources sous Paramètres > Revues > Contact.]]></message>
 	<message key="manager.navigationMenus.form.typeMissing">Veuillez sélectionner un type de menu de navigation.</message>
 	<message key="manager.navigationMenus.subscriptions.conditionalWarning"><![CDATA[Ce lien ne sera affiché que si les paiements sont activés sous Paramètres > Distribution > Paiements.]]></message>
@@ -547,7 +572,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="grid.category.categoryDetails">Renseignements sur la catégorie</message>
 
 	<!-- Statistics -->
-
+	<message key="stats.activeSubmissions">Soumissions actives</message>
 	<message key="stats.articlesOfTotal">{$count} de {$total} articles</message>
 	<message key="stats.daily">Par jour</message>
 	<message key="stats.dateRange">Période</message>
@@ -557,7 +582,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="stats.dateRange.customRange">Période personnalisée</message>
 	<message key="stats.dateRange.dateDoesNotExist">L'une des dates entrées n'existe pas</message>
 	<message key="stats.dateRange.from">De</message>
-<message key="stats.dateRange.instruction">Entrer chaque date dans le format AAAA-MM-JJ. Par exemple, si vous voulez inscrire le 15 janvier 2019, entrer « 2019-02-15 ».</message>
+	<message key="stats.dateRange.instruction">Entrer chaque date dans le format AAAA-MM-JJ. Par exemple, si vous voulez inscrire le 15 janvier 2019, entrer « 2019-02-15 ».</message>
 	<message key="stats.dateRange.invalidDate">le format de date est invalide. Entrer chaque date dans le format AAAA-MM-JJ.</message>
 	<message key="stats.dateRange.invalidDateRange">La date de début doit précéder la date de fin.</message>
 	<message key="stats.dateRange.invalidEndDateMax">La date de fin ne doit pas être ultérieure à {$date}.</message>
@@ -568,7 +593,7 @@ Il y a des cas où seule une statistique d'utilisation doit être utilisée, par
 	<message key="stats.dateRange.sinceDate">Depuis le {$date}</message>
 	<message key="stats.dateRange.to">Au</message>
 	<message key="stats.dateRange.untilDate">Jusqu'au {$date}</message>
-	<message key="stats.fileViews">Consultations de fichiers</message>
+	<message key="stats.fileViews">Consultations du,des fichier(s)</message>
 	<message key="stats.html">HTML</message>
 	<message key="stats.monthly">Par mois</message>
 	<message key="stats.pdf">PDF</message>
