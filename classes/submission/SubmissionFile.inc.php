@@ -536,6 +536,34 @@ class SubmissionFile extends PKPFile {
 			$this->getExtension();
 	}
 
+
+
+	/**
+	 * MHV_202009209 -- Get the filename that should be sent to clients when downloading.
+	 * @return string
+	 */
+	function getCustomClientFileName() {
+		// Generate a human readable time stamp.
+		$timestamp = date('Ymd', strtotime($this->getDateUploaded()));
+
+		$genreDao = DAORegistry::getDAO('GenreDAO');
+		$genre = $genreDao->getById($this->getGenreId());
+
+		// Make the file name unique across all files and file revisions.
+		// Also make sure that files can be ordered sensibly by file name.
+		return	$this->getSubmissionId() . '_'.
+			// ($genre? ($genre->getLocalizedName() . '-'):'') .
+			$this->getFileId() . '_' .
+			$this->getRevision() . '_' .
+			// $this->getFileStage() . '-' .
+			// $timestamp .
+			$timestamp . '_' .
+			$this->getOriginalFilename(); // MHV_20200727 : Original file name contains the "." + extension 
+			//'.' .
+			//$this->getExtension();
+	}
+
+ 
 	//
 	// Overridden public methods from PKPFile
 	//
