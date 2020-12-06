@@ -25,7 +25,7 @@
 	<message key="submission.submit.submissionChecklist">Liste de vérification de la soumission</message>
 	<message key="submission.submit.submissionChecklistDescription">Vous devez lire et reconnaître que vous avez rempli les conditions ci-dessous avant de poursuivre.</message>
 	<message key="submission.submit.submissionComplete">Soumission complète</message>
-	<message key="submission.submit.submissionCompleteThanks">Merci de votre intérêt à vouloir publier dans « {$contextName} ».</message>
+	<message key="submission.submit.submissionCompleteThanks">Merci de votre intérêt à vouloir publier dans la revue « {$contextName} ».</message>
 	<message key="submission.submit.copyrightNoticeAgreementLabel">Acceptation de la déclaration de droit d'auteur.</message>
 	<message key="submission.submit.copyrightNoticeAgree">J'accepte et respecterai les conditions de la déclaration de droit d'auteur.</message>
 	<message key="submission.submit.whatNext">Quelle est la prochaine étape ?</message>
@@ -47,7 +47,7 @@
 	<message key="metadata.filters.paracite.settings.citationModule.displayName">Module de références</message>
 	<message key="metadata.filters.paracite.settings.citationModule.validationMessage">Veuillez sélectionner l'un des modules de références fournis.</message>
 	<message key="metadata.filters.settings.isOptional.displayName">Ne pas utiliser par défaut (sera tout de même disponible pour le,la rédacteur-trice)</message>
-<message key="metadata.filters.settings.isOptional.validationMessage">Erreur interne. Une valeur non valide a été affectée au paramètre « optional filter ». Veuillez le signaler comme un bogue.</message>
+	<message key="metadata.filters.settings.isOptional.validationMessage">Erreur interne. Une valeur non valide a été affectée au paramètre « optional filter ». Veuillez le signaler comme un bogue.</message>
 	<!-- messages shared between MD schemas -->
 	<message key="metadata.property.displayName.author">Auteurs-es</message>
 	<message key="metadata.property.validationMessage.author">Pour de meilleurs résultats, les auteurs-es devraient être saisis-es dans le format suivant : Coleman Jr, D. (Ralf) Dr.</message>
@@ -135,6 +135,7 @@
 	<message key="metadata.property.validationMessage.partName">Veuillez saisir un nom valide pour la partie.</message>
 	<message key="metadata.property.displayName.name-type">Type de nom</message>
 	<message key="metadata.property.validationMessage.name-type">Assurez-vous de choisir un type de nom valide. Les valeurs acceptées sont « personnel » , « corporatif » et « conférence ».</message>
+	<message key="metadata.property.displayName.abstract">Résumé</message>
 	<!-- FIXME: end -->
 
 	<message key="common.queue.long.submissionsUnassigned">Non assignées</message>
@@ -148,7 +149,7 @@
 	<message key="submission.mySubmissions">Mes soumissions</message>
 	<message key="submission.addFile">Téléverser un fichier</message>
 	<message key="submission.agencies">Organismes</message>
-	<message key="submission.abstractViews">Consultations du sommaire</message>
+	<message key="submission.abstractViews">Consultations de la page du résumé</message>
 	<message key="submission.accepted">Accepté-e</message>
 	<message key="submission.acknowledge">Envoyer un accusé de réception</message>
 	<message key="submission.addSuppFile">Ajouter un fichier supplémentaire</message>
@@ -176,7 +177,7 @@
 	<message key="submission.comments.review">Évaluation</message>
 	<message key="submission.comments.sendDecisionToReviewers">Envoyer la décision éditoriale aux évaluateurs-trices</message>
 	<message key="submission.comments.subject">Objet</message>
-	<message key="submission.complete">Terminer</message>
+	<message key="submission.complete">Complétée</message>
 	<message key="submission.contributors">Liste des contributeurs-trices</message>
 	<message key="submission.copyedited">Version(s) révisée(s)</message>
 	<message key="submission.copyediting">Révision</message>
@@ -320,6 +321,7 @@
 	<message key="submissions.completed">Terminée</message>
 	<message key="submissions.declined">Rejetée</message>
 	<message key="submissions.incomplete">Incomplète</message>
+	<message key="submissions.inactive">Inactive depuis {$days} jour(s)</message>
 	<message key="submissions.noSubmissions">Aucune soumission</message>
 	<message key="submissions.queuedEditing">En révision</message>
 	<message key="submissions.queued">En attente</message>
@@ -402,7 +404,7 @@
 	<message key="submission.status.published">Publiée</message>
 	<message key="submission.submit.uploadStep">1. Téléverser la soumission</message>
 	<message key="submission.submit.uploadSubmissionFile">Téléverser le fichier de soumission</message>
-	<message key="submission.submit.metadataStep">2. Métadonnées</message>
+	<message key="submission.submit.metadataStep">2. Renseignements du fichier</message>
 	<message key="submission.submit.finishingUpStep">3. Terminer</message>
 	<message key="submission.submit.fileNameRequired">Vous devez entrer un nom de fichier pour ce fichier.</message>
 	<!-- File upload wizard -->
@@ -428,6 +430,10 @@
 	<message key="submission.upload.noAvailableReviewFiles">Vous n'avez aucun fichier à évaluer pour le moment.</message>
 	<!-- Review Round Status Keys -->
 	<message key="editor.submission.roundStatus.revisionsRequested">Les révisions ont été demandées.</message>
+	<message key="editor.submission.roundStatus.revisionsRequested_instructions_aux_auteurs">Les révisions ont été demandées.
+		<![CDATA[<p style="border:2pt solid orange;font-weight: normal;"><b>Instructions aux auteurs-es</b> : veuillez téléverser votre(vos) fichiers comportant les révisions
+		demandées dans  la section <b>Révisions</b> ici-bas, bouton de droite <b>Téléverser un fichier</b>.
+		</p>]]></message>
 	<message key="editor.submission.roundStatus.revisionsSubmitted">Les révisions ont été soumises.</message>
 	<message key="editor.submission.roundStatus.resubmitForReview">La soumission doit être soumise à nouveau pour un autre cycle d'évaluation.</message>
 	<message key="editor.submission.roundStatus.submissionResubmitted">La soumission a été soumise à nouveau pour un autre cycle d'évaluation.</message>
@@ -490,7 +496,7 @@
 	<message key="submission.currentStage">Étape actuelle</message>
 	<message key="submission.noActionRequired">Aucune action requise</message>
 	<message key="submission.actionNeeded">Action requise</message>
-	<message key="reviewer.submission.reviewFiles">Fichiers d'évaluation</message>
+	<message key="reviewer.submission.reviewFiles">Fichier(s) à évaluer</message>
 	<message key="submission.submit.currentFile">Fichier en cours</message>
 	<message key="submission.finalDraft">Fichiers des ébauches finales</message>
 
@@ -530,6 +536,8 @@
 	<message key="submission.review.uploadRevisionToRound">Téléverser le fichier révisé</message>
 	<message key="log.review.reviewerAssigned">{$reviewerName} a été choisi-e pour évaluer la soumission {$submissionId} pour le {$round}e cycle d'évaluation.</message>
 	<message key="log.review.reviewUnconsidered">{$editorName} a indiqué que le {$round}e cycle d'évaluation de la soumission {$submissionId} n'est pas considéré.</message>
+	<message key="log.review.reviewConfirmed">Le,la rédacteur-trice {$userName} a confirmé une évaluation pour le cycle d'évaluation {$round} pour la soumission {$submissionId}.</message>
+	<message key="log.review.reviewReady">{$reviewerName} a complété l'évaluation du cycle {$round} d'évaluation pour la soumission {$submissionId}.</message>
 	<message key="submission.review.status.awaitingResponse">En attente de la réponse de l'évaluateur-trice.</message>
 	<message key="submission.review.status.declined">L'évaluateur-trice a refusé la demande d'évaluation.</message>
 	<message key="submission.review.status.responseOverdue">L'évaluateur-trice a dépassé le délai de réponse.</message>
@@ -617,16 +625,13 @@
 	<message key="submission.list.incompleteSubmissionNotice">Cette soumission doit être complétée avant qu'un-e rédacteur-trice ne l'évalue.</message>
 	<message key="submission.list.currentStage">Présentement à l'étape {$stage}.</message>
 	<message key="submission.list.assignEditor">Assigner un rédacteur-trice</message>
-	
 	<message key="grid.category.categories">Catégories</message>
 	<message key="catalog.sortBy.titleAsc">Titres (A-Z)</message>
 	<message key="catalog.sortBy.titleDesc">Titres (Z-A)</message>
 	<message key="catalog.sortBy.datePublishedAsc">Date de publication (du plus ancien)</message>
 	<message key="catalog.sortBy.datePublishedDesc">Date de publication (du plus récent)</message>
-	<message key="category.coverImage">Image de couverture pour la catégorie</message>	
-	<message key="submission.submit.placement.categories">Catégories</message>
-	<message key="submission.currentCoverImage">Image actuelle</message>	
-	<message key="catalog.category.noItems">Rien n'a encore été publié dans cette catégorie.</message>
+	<message key="category.coverImage">Image de couverture pour la catégorie</message>	<message key="submission.submit.placement.categories">Catégories</message>
+	<message key="submission.currentCoverImage">Image actuelle</message>	<message key="catalog.category.noItems">Rien n'a encore été publié dans cette catégorie.</message>
 	<message key="catalog.category.subcategories">Sous-categories</message>
 </locale>
 
