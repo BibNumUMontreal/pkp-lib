@@ -257,7 +257,12 @@ class ReviewRound extends DataObject {
 	function getStatusKey($isAuthor = false) {
 		switch ($this->determineStatus()) {
 			case REVIEW_ROUND_STATUS_REVISIONS_REQUESTED:
-				return 'editor.submission.roundStatus.revisionsRequested';
+			// MHV nov 2020: Je change afin d'ajouter une instructions aux auteurs. Custom phrase "editor.submission.roundStatus.revisionsRequested_instructions_aux_auteurs"
+			// mise dans le fichier submission.xml (bientot submission.po) dans répertoire \ojs-3.1.2-4\public\presses\_n_\customLocale\ de la revue.
+			// Le test $isAuthor semble permettre l'affichage approprié dans la liste "Mes soumissions" vu par l'auteur ('editor.submission.roundStatus.revisionsRequested') et l'instructions au long dans 
+			// l'onglet "Evaluation" vu par l'auteur ('editor.submission.roundStatus.revisionsRequested_instructions_aux_auteurs'); puis pour l'IU non-auteur l'affichage de ('editor.submission.roundStatus.revisionsRequested')
+			//	return 'editor.submission.roundStatus.revisionsRequested';
+				return $isAuthor ? 'editor.submission.roundStatus.revisionsRequested_instructions_aux_auteurs' : 'editor.submission.roundStatus.revisionsRequested';
 			case REVIEW_ROUND_STATUS_REVISIONS_SUBMITTED:
 				return 'editor.submission.roundStatus.revisionsSubmitted';
 			case REVIEW_ROUND_STATUS_RESUBMIT_FOR_REVIEW:
