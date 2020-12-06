@@ -33,7 +33,7 @@
 	<message key="editor.submission.backToSearch">Revenir à la recherche</message>
 	<message key="editor.review.createReviewer">Créer un-e nouvel-elle évaluateur-trice</message>
 	<message key="editor.review.enrollReviewer.short">Recruter un-e utilisateur-trice existant-e</message>
-	<message key="editor.review.unassignReviewer">Retirer le privilège de l'évaluateur-trice</message>
+	<message key="editor.review.unassignReviewer">Retirer l'assignation de l'évaluateur-trice</message>
 	<message key="editor.submissionReview.reviewType">Type d'évaluation</message>
 	<message key="editor.submissionReview.sendEmail">Envoyer un courriel d'avis à le,la ou les auteur-e-s: {$authorName}</message>
 	<message key="editor.submissionReview.sendEmail.editors">Envoyer un courriel d'avis au,à la ou aux rédacteur-trice-s: {$editorNames}</message>
@@ -73,6 +73,7 @@
 	<message key="editor.review.reviewCompleted">Évaluation terminée</message>
 	<message key="editor.review.reviewConfirmed">Évaluation confirmée</message>
 	<message key="editor.review.reviewSubmitted">Évaluation soumise</message>
+	<message key="editor.review.reviewerThanked">Évaluateur-trice remercié-e</message>
 	<message key="editor.review.reviewerComments">Commentaires de l'évaluateur-trice</message>
 	<message key="editor.review.rateReviewer">Appréciation de l'évaluateur-trice</message>
 	<message key="editor.review.rateReviewer.description">Coter la qualité de l'évaluation fournie. Cette information n'est pas partagée avec l'évaluateur-trice.</message>

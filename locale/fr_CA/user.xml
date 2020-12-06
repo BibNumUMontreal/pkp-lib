@@ -117,7 +117,7 @@
 	<message key="user.register.form.userGroupRequired">Au moins un rôle doit être sélectionné</message>
 	<message key="user.register.form.usernameExists">Le nom d'utilisateur-trice sélectionné est déjà utilisé par un-e autre utilisateur-trice.</message>
 	<message key="user.register.form.passwordLengthRestriction">Le mot de passe doit contenir au moins {$length} caractères.</message>
-	<message key="user.register.registerAs">S'inscrire à {$contextName} en tant que...</message>
+	<message key="user.register.registerAs">S'inscrire à la revue {$contextName} en tant que...</message>
 	<message key="user.register">S'inscrire</message>
 	<message key="user.register.usernameRestriction">Le nom d'utilisateur ne doit contenir que des lettres minuscules, chiffres et traits d'union/de soulignement.</message>
 	<message key="user.register.registrationCompleted"><![CDATA[Vous vous êtes inscrit-e avec succès. <a href="{$profileUrl}"> Cliquez ici </a> pour compléter votre profil utilisateur.]]></message>

@@ -443,6 +443,10 @@
 
 	<!-- Review Round Status Keys -->
 	<message key="editor.submission.roundStatus.revisionsRequested">Revisions have been requested.</message>
+	<message key="editor.submission.roundStatus.revisionsRequested_instructions_aux_auteurs">Revisions have been requested.
+		<![CDATA[<p style="border:2pt solid orange;font-weight: normal;"> 
+<b>Instructions to Authors</b>: Please upload your file(s) with the revisions requested in the <b>Revisions</b> section below, <b>Upload file</b> button on the right.
+		</p>]]></message>
 	<message key="editor.submission.roundStatus.revisionsSubmitted">Revisions have been submitted.</message>
 	<message key="editor.submission.roundStatus.resubmitForReview">The submission must be resubmitted for another review round.</message>
 	<message key="editor.submission.roundStatus.submissionResubmitted">Submission has been resubmitted for another review round.</message>
